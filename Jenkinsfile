@@ -18,7 +18,7 @@ pipeline{
 		stage("Pushing image to docker"){
 			steps{
 				script{
-					sh 'docker push smeka2/'
+					sh 'docker push smeka2/swe-645-assignment-2-docker-image'
 				}
 			}
 		}
