@@ -1,0 +1,97 @@
+/* 
+  Sree Charitha Meka  
+  G01410061 
+*/
+/* 
+This is an external cascading stylesheet(css) file containing the styles for student survey form
+ */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+input[type="submit"],
+input[type="button"] {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px 25px;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    width: 250px;
+    height: 100px;
+}
+
+textarea,
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    width: 255px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-bottom: 5px;
+}
+
+.item-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 35px;
+    margin: 5px 0;
+}
+
+.item-label {
+    width: 175px;
+    display: flex;
+    align-items: center;
+}
+
+.item-input {
+    width: 60%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.text-area-container {
+    height: auto !important;
+}
+
+.checkbox-container {
+    width: 100%;
+    margin: 5px 0 10px calc((40% - 175px) / 2 - 5px);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.input-boxes {
+    width: 50%;
+}
