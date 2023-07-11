@@ -10,15 +10,15 @@ pipeline{
 					checkout scm
 					sh 'rm -rf *.war'
 					sh 'jar -cvf SWE645Assignment2.war -C src/main/webapp .'
-					sh 'sudo docker login -u smeka2 -p ${DOCKERHUB_PASS}'
-					sh 'sudo docker build -t smeka2/swe-645-assignment-2-docker-image .'
+					sh 'echo "Cherrym_1998" | docker login -u smeka2 --password-stdin'
+					sh 'docker build -t smeka2/swe-645-assignment-2-docker-image .'
 				}
 			}
 		}
 		stage("Pushing image to docker"){
 			steps{
 				script{
-					sh 'sudo docker push smeka2/swe-645-assignment-2-docker-image'
+					sh 'docker push smeka2/swe-645-assignment-2-docker-image'
 				}
 			}
 		}
